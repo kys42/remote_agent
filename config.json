@@ -1,0 +1,28 @@
+{
+  "logging": {
+    "level": "DEBUG",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    "file": null
+  },
+  "server": {
+    "host": "0.0.0.0",
+    "port": 8001,
+    "timeout": 300
+  },
+  "agents": {
+    "claude_code": {
+      "command": "claude",
+      "timeout": 300,
+      "max_output_lines": 1000
+    },
+    "gemini_cli": {
+      "command": "gemini_cli",
+      "timeout": 300,
+      "max_output_lines": 1000
+    }
+  },
+  "telegram": {
+    "message_chunk_size": 4000,
+    "max_concurrent_users": 10
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "remote-agent",
+  "version": "1.0.0",
+  "description": "Remote agent system for Claude Code via Telegram",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "bridge": "node src/bridge-server.js",
+    "executor": "node src/agent-executor.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.66.0",
+    "ws": "^8.14.2",
+    "express": "^4.18.2",
+    "uuid": "^9.0.1",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
